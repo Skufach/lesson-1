@@ -18,28 +18,29 @@ const TextFieldContainer = styled.div`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.pallete.darkWhite};
   height: 100px;
-  min-height: 40px;
   border: 1px
     ${({ theme, focused }) =>
       focused ? theme.pallete.lola : theme.pallete.darkWhite}
     solid;
 `
 
-const StyledInput = styled.input`
+const StyledInput = styled.textarea`
   border: none;
   background-color: transparent;
-  height: 40px;
+  height: 80px;
   flex: 1;
   line-height: 18px;
   font-family: Montserrat;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   font-size: 16px;
   outline: none;
+  padding-top: ${({ theme }) => theme.paddings.half}px;
+  padding-bottom: ${({ theme }) => theme.paddings.half}px;
   color: ${({ theme, disabled }) =>
     disabled ? theme.pallete.lightGray : theme.pallete.nero};
   ::placeholder {
     color: ${({ theme }) => theme.pallete.lightGray};
-    line-height: 44px;
+    line-height: 18px;
   }
 `
 
