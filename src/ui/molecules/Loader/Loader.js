@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { IconLoader } from '@ui/atoms'
-import { styled, keyframes } from '@ui/theme/styled'
+import { styled } from '@ui/theme/styled'
 
 const Container = styled.div`
   height: 88px;
