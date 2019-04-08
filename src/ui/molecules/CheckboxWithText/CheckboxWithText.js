@@ -11,10 +11,10 @@ const Container = styled.div`
   flex-direction: row;
 `
 
-export const CheckboxWithText = ({ disabled, text }) => {
+export const CheckboxWithText = ({ disabled, text,checked }) => {
   return (
     <Container>
-      <Checkbox disabled={disabled} />
+      <Checkbox disabled={disabled} checked={checked} />
       <VBox />
       <Body2>{text ? text : ''}</Body2>
     </Container>
@@ -23,5 +23,6 @@ export const CheckboxWithText = ({ disabled, text }) => {
 
 CheckboxWithText.propTypes = {
   disabled: PropTypes.bool,
+  checked: PropTypes.bool,
   text: PropTypes.text,
 }

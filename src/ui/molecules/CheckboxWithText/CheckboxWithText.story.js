@@ -6,6 +6,7 @@ import { boolean, text } from '@storybook/addon-knobs'
 storiesOf('ui/molecules', module).add('CheckboxWithText', () => (
   <CheckboxWithText
     disabled={boolean('disabled', false)}
+    checked={boolean('checked', false)}
     text={text('Текст', 'Подтвердите условия')}
   />
 ))
